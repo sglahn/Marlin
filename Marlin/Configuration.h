@@ -22,21 +22,6 @@
 #pragma once
 
 /**
- * Choose your version:
- */
-// normal size or plus?
-#define ANYCUBIC_KOSSEL_PLUS
-
-// Anycubic Probe version 1 or 2 see README.md; 0 for no probe
-#define ANYCUBIC_PROBE_VERSION 2
-
-// Heated Bed:
-// 0 ... no heated bed
-// 1 ... aluminium heated bed with "BuildTak-like" sticker
-// 2 ... ultrabase heated bed
-#define ANYCUBIC_KOSSEL_ENABLE_BED 1
-
-/**
  * Configuration.h
  *
  * Basic settings such as:
@@ -2507,7 +2492,7 @@
 
   // Support for second Adafruit NeoPixel LED driver controlled with M150 S1 ...
   //#define NEOPIXEL2_SEPARATE
-  #if ENABLED(NEOPIXEL2_SEPARATE)
+  #if ENABLED(  )
     #define NEOPIXEL2_PIXELS      15  // Number of LEDs in the second strip
     #define NEOPIXEL2_BRIGHTNESS 127  // Initial brightness (0-255)
     #define NEOPIXEL2_STARTUP_TEST    // Cycle through colors at startup
